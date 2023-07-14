@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const openNav = () => setOpen(false);
   const closeNav = () => setOpen(true);
