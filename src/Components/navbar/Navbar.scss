@@ -1,0 +1,158 @@
+@import "/src/Variable/Variable.scss";
+
+.navbar.active {
+  display: none;
+}
+
+.navbar {
+  .links.active {
+    display: none;
+  }
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  animation: dropdown forwards 0.3s;
+
+  .nav-sect {
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px;
+
+    .logo img {
+      width: 170px;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 1.5em;
+
+      a {
+        font-size: 13px;
+        color: rgb(152, 143, 143);
+        font-size: 13px;
+        font-weight: 500;
+        transition: color 0.3s;
+        &:hover {
+          color: white;
+        }
+      }
+
+      .hidden-links {
+        display: none;
+      }
+    }
+
+    .top-logo-x {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+  .wallet-conn {
+    padding: 7px 20px;
+    font-size: 14px;
+    background-color: $backgroundtealcolor;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: black;
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 5px 10px;
+
+    .nav-sect {
+      width: fit-content;
+      align-items: center;
+      gap: 1em;
+
+      .links {
+        display: none;
+      }
+
+      .links.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+        gap: 2em;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        height: 100vh;
+        width: 70vw;
+        padding: 20px;
+        opacity: 1;
+        animation: slideIn forwards 0.3s;
+
+        a {
+          color: rgb(222, 211, 211);
+          font-size: 15px;
+
+          &:hover {
+            color: white;
+          }
+        }
+
+        .top-logo-x {
+          display: flex;
+          align-items: center;
+          gap: 1em;
+
+          .hamburger {
+            display: block;
+            font-size: 25px;
+            cursor: pointer;
+            color: white;
+          }
+
+          img {
+            width: 50px;
+          }
+        }
+
+        .hidden-links {
+          display: flex;
+          align-items: center;
+          gap: 2em;
+          flex-direction: column;
+          background-color: rgb(37, 103, 78);
+          width: 100%;
+          padding: 5px;
+        }
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-20px);
+    opacity: .1;
+  }
+}
