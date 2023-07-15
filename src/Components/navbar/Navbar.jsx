@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRefuseEffect } from "react";
 import "../navbar/Navbar.scss";
 import Logo from "../../assets/logos/white-hawksight.png";
 import Logo2 from "../../assets/logos/image.webp";
@@ -21,6 +21,8 @@ const Navbar = () => {
   };
 
   window.addEventListener("scroll", changeNav);
+
+  // window.addEventListener()
 
   return (
     <div className={nav ? "navbar" : "navbar active"}>

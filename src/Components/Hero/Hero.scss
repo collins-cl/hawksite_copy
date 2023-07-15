@@ -1,0 +1,144 @@
+@import "/src/Variable/Variable.scss";
+
+.hero {
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 4em;
+
+  .logo-image {
+    img {
+      width: 200px;
+    }
+  }
+
+  h2 {
+    font-size: 4em;
+
+    span {
+      color: $tealcolor;
+    }
+  }
+
+  .explore-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+
+    .explore-1 {
+      background: $rainbowgradient;
+      border-radius: 5px;
+      width: 45%;
+      height: 45px;
+      padding: 3px;
+      cursor: pointer;
+      &:hover {
+        transition: 0.3s background;
+        background: $lghttealcolor;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: white;
+        border-radius: 5px;
+        height: 100%;
+        &:hover {
+          transition: 0.3s background-color;
+          background-color: $lghttealcolor;
+        }
+
+        p {
+          color: black;
+          font-weight: bold;
+        }
+
+        .icon {
+          color: black;
+          animation: bounceRight 1s ease-in infinite;
+        }
+      }
+    }
+
+    .explore-2 {
+      display: flex;
+      justify-content: space-between;
+      width: 45%;
+
+      img {
+        filter: brightness(60%);
+      }
+
+      .e-01 div {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+      }
+
+      .e-01,
+      .e-02 {
+        p {
+          color: rgb(105, 105, 105);
+          font-weight: bold;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes bounceRight {
+  0% {
+    transform: translateX(5px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 3em;
+
+    h2 {
+      font-size: 1.7em;
+
+      span {
+        color: $backgroundtealcolor;
+      }
+    }
+
+    .explore-cont {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: start;
+      gap: 2em;
+      width: 100%;
+
+      .explore-1 {
+        background: $rainbowgradient;
+        width: 80%;
+
+        div {
+
+          p {
+            color: black;
+            font-weight: bold;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .explore-2 {
+        display: flex;
+        justify-content: space-between;
+        width: 75%;
+
+        img {
+          filter: brightness(60%);
+          width: 70px;
+        }
+      }
+    }
+  }
+}
