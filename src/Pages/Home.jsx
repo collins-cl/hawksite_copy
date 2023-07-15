@@ -11,12 +11,16 @@ const Home = () => {
       <div className="images-carousel">
         <p>POWERED BY</p>
         <div className="carousel">
+
+          ddddd
           <div className="card">
-            {Images.map((image) => (
-              <div key={image.id}>
-                <img src={image.image} width={120} alt="" />
-              </div>
-            ))}
+           
+            {Images &&
+              Images.map((image) => (
+                <div key={image.id}>
+                  <img src={image.image} width={120} alt="" />
+                </div>
+              ))}
           </div>
         </div>
       </div>
