@@ -1,0 +1,116 @@
+@import "../Variable/Variable.scss";
+
+.images-carousel {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 7em;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+
+  p {
+    width: 20%;
+    padding: 10px;
+    color: $gray;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .carousel {
+    overflow: hidden;
+    width: auto;
+    position: relative;
+    // height: 60px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      content: "";
+      width: 40px;
+      height: 60px;
+      background-color: #0c100e;
+      filter: blur(10px);
+    }
+    &::after {
+      position: absolute;
+      right: 0;
+      content: "";
+      width: 40px;
+      height: 60px;
+      background-color: #1c211f;
+      filter: blur(10px);
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      animation: scroll 20s infinite linear;
+      animation-delay: 0s;
+      width: calc(120px * 21);
+    }
+
+    img {
+      margin-right: 5em;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: 0.4s filter;
+
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-120px * 10));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .images-carousel {
+    max-width: 100vw;
+    margin: auto;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    p {
+      width: 100%;
+      text-align: center;
+    }
+
+    .carousel {
+      overflow-x: hidden;
+      width: 90vw;
+      position: relative;
+      // height: 60px;
+
+      .card {
+        display: flex;
+        align-items: center;
+        animation: scroll 20s infinite linear;
+        animation-delay: 0s;
+        width: calc(100px * 21);
+      }
+
+      img {
+        margin-right: 4em;
+        filter: grayscale(100%);
+        cursor: pointer;
+        transition: 0.4s filter;
+
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+  }
+}
