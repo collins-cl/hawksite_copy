@@ -1,0 +1,193 @@
+@import "/src/Variable/Variable.scss";
+
+.road-cont {
+  background: linear-gradient(to bottom, #070d0a, #1f165245);
+  padding: 5em 0;
+}
+
+.roadmap {
+  max-width: 1050px;
+  margin: auto;
+  margin-top: 7em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .h2,
+  h2 {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .h2 {
+    margin-top: -1em;
+    font-size: 1.3em;
+    color: $gray;
+  }
+
+  .roadmap-containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+
+    div {
+      background: $roadmapcolor;
+      border-radius: 10px;
+      padding: 20px;
+
+      p {
+        font-size: 14px;
+        font-weight: bold;
+        color: $tealcolor;
+      }
+
+      h4 {
+        font-weight: 600;
+        font-size: 15px;
+        margin-top: -10px;
+      }
+    }
+  }
+
+  .help {
+    margin-top: 6em;
+
+    h3 {
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .p {
+      font-size: 1.2em;
+      text-align: center;
+      margin-top: -1em;
+    }
+
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8em;
+      max-width: 70%;
+      margin-top: 2em;
+
+      .accordion-body {
+        background-color: $accordioncolor;
+        border-radius: 10px;
+        max-width: fit-content;
+        max-height: fit-content;
+
+        p {
+          text-transform: capitalize;
+          font-size: 14px;
+        }
+
+        .icon {
+          margin-left: 2em;
+        }
+
+        #panel1a-header {
+          color: $highlightcolor;
+          padding: 10px;
+          max-height: 30px;
+        }
+
+        #content,
+        #content a {
+          color: $gray;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2em;
+      margin-top: 10px;
+
+      div {
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(166, 166, 166, 0.472);
+        border-radius: 5px;
+
+        .social {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .road-cont {
+    background: linear-gradient(to bottom, #070d0a, #1f165245);
+    padding: 5em 0;
+  }
+
+  .roadmap {
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 1em;
+
+    h2 {
+      font-size: 1.6em;
+    }
+
+    .roadmap-containers {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1em;
+      margin-top: 10px;
+
+      div {
+        background: $roadmapcolor;
+        border-radius: 10px;
+        padding: 8px 15px;
+      }
+    }
+
+    .help {
+      margin-top: 4em;
+
+      h3 {
+        text-align: center;
+        font-size: 1.7em;
+      }
+
+      .p {
+        font-size: 1em;
+      }
+
+      .accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8em;
+        max-width: 100%;
+        margin-top: 1.7em;
+
+        .accordion-body {
+          #content {
+            color: $gray;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        margin-top: 10px;
+      }
+    }
+  }
+}

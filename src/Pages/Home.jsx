@@ -3,6 +3,7 @@ import Hero from "../Components/Hero/Hero";
 import Images from "../Variable/Images";
 import "../Pages/Home.scss";
 import TrustedBy from "../Components/TrustedBy/TrustedBy";
+import Roadmap from "../Components/Roadmap/Roadmap";
 
 const Home = () => {
   return (
@@ -29,6 +30,8 @@ const Home = () => {
       </div>
 
       <TrustedBy />
+
+      <Roadmap />
       <p>xxx</p>
       <p>xxx</p>
       <p>xxx</p>

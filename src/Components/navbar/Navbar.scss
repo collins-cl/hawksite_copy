@@ -16,6 +16,7 @@
   position: sticky;
   top: 0;
   animation: dropdown forwards 0.3s;
+  z-index: 1;
 
   .nav-sect {
     width: 57%;
