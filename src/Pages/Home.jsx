@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../Components/Hero/Hero";
 import Images from "../Variable/Images";
 import "../Pages/Home.scss";
+import TrustedBy from "../Components/TrustedBy/TrustedBy";
 
 const Home = () => {
   return (
@@ -11,10 +12,7 @@ const Home = () => {
       <div className="images-carousel">
         <p>POWERED BY</p>
         <div className="carousel">
-
-          ddddd
           <div className="card">
-           
             {Images &&
               Images.map((image) => (
                 <div key={image.id}>
@@ -25,6 +23,7 @@ const Home = () => {
         </div>
       </div>
 
+      <TrustedBy />
       <p>xxx</p>
       <p>xxx</p>
       <p>xxx</p>
