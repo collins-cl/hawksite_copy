@@ -3,6 +3,8 @@ import "../TrustedBy/TrustedBy.scss";
 import Images from "../../Variable/Images";
 
 const TrustedBy = () => {
+  const image = Images;
+  console.log(image.image);
   return (
     <div className="trusted">
       <h2>Trusted By</h2>
@@ -14,7 +16,7 @@ const TrustedBy = () => {
 
       <div className="images">
         {Images.slice(0, 15).map((image) => (
-          <img src={image.image} width={150} alt="" />
+          <img key={image.id} src={image.image} width={150} alt="" />
         ))}
       </div>
     </div>

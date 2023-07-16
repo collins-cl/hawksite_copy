@@ -16,7 +16,12 @@ const Home = () => {
             {Images &&
               Images.map((image) => (
                 <div key={image.id}>
-                  <img src={image.image} width={120} alt="" />
+                  <img
+                    src={image.image}
+                    title={image.title}
+                    width={120}
+                    alt=""
+                  />
                 </div>
               ))}
           </div>
