@@ -1,7 +1,7 @@
 @import "/src/Variable/Variable.scss";
 
 .road-cont {
-  background: linear-gradient(to bottom, #070d0a, #1f165245);
+  background: linear-gradient(to right bottom, #070d0a,rgba(29, 4, 29, 0.145) ,#1f16523e );
   padding: 5em 0;
 }
 
@@ -128,7 +128,6 @@
 
 @media screen and (max-width: 600px) {
   .road-cont {
-    background: linear-gradient(to bottom, #070d0a, #1f165245);
     padding: 5em 0;
   }
 

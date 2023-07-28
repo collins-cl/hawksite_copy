@@ -1,0 +1,107 @@
+@import "/src/Variable/Variable.scss";
+
+.footer {
+  max-width: 95%;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.footer-logo {
+  img {
+    width: 200px;
+  }
+}
+
+.abt-footer-hawk {
+  display: flex;
+  align-items: flex-start;
+  gap: 3em;
+
+  .flx-1 {
+    width: 85%;
+
+    .flx-1-p {
+      p {
+        font-size: 14px;
+        color: $gray;
+
+        span {
+          color: white;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .flx-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 30%;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 8px 17px;
+      font-size: 14px;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s background-color;
+
+      &:hover {
+        background-color: rgb(62, 59, 59);
+      }
+    }
+  }
+}
+
+.bottom-footer {
+  margin-top: 3em;
+  p {
+    font-size: 13px;
+    color: rgb(122, 110, 110);
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+    .footer {
+        max-width: 90%;
+        margin: auto;
+        margin-top: 5em;
+      }
+  .abt-footer-hawk {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    .flx-1 {
+      width: 100%;
+    }
+
+    .flx-2 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      width: 80%;
+      margin: auto;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 8px 17px;
+        font-size: 14px;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s background-color;
+
+        &:hover {
+          background-color: rgb(62, 59, 59);
+        }
+      }
+    }
+  }
+}

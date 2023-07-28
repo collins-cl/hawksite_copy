@@ -4,6 +4,7 @@ import Images from "../Variable/Images";
 import "../Pages/Home.scss";
 import TrustedBy from "../Components/TrustedBy/TrustedBy";
 import Roadmap from "../Components/Roadmap/Roadmap";
+import Footer from "../Components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -32,57 +33,8 @@ const Home = () => {
       <TrustedBy />
 
       <Roadmap />
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
-      <p>xxx</p>
+
+      <Footer />
     </div>
   );
 };
